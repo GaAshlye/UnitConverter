@@ -10,7 +10,7 @@ namespace UnitConverter.Models
 {
     public class UnitConverterViewModel
     {
-        public double Temperature{get; set;}
+        //public double Temperature{get; set;}
         public double InputValue{get; set;}              
 
         public string Operator{get; set;}

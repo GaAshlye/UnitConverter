@@ -12541,11 +12541,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\CIDM3312\\UnitConverter\\UnitConverter.csproj",
+      "projectUniqueName": "C:\\CIDM3312\\UnitConverterProject\\UnitConverter\\UnitConverter.csproj",
       "projectName": "UnitConverter",
-      "projectPath": "C:\\CIDM3312\\UnitConverter\\UnitConverter.csproj",
+      "projectPath": "C:\\CIDM3312\\UnitConverterProject\\UnitConverter\\UnitConverter.csproj",
       "packagesPath": "C:\\Users\\gabri\\.nuget\\packages\\",
-      "outputPath": "C:\\CIDM3312\\UnitConverter\\obj\\",
+      "outputPath": "C:\\CIDM3312\\UnitConverterProject\\UnitConverter\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

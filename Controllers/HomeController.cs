@@ -20,17 +20,37 @@ namespace UnitConverter.Controllers
            
             return View();
         }
-        //[HttpPost]
-        // public IActionResult DoConvert(UnitConverterViewModel operation)
-        // {
+        [HttpPost]
+        public IActionResult Conversion(UnitConverterViewModel operation)
+         {
             
-        //     switch(operation.Operator)
-        //     {
-        //         case "Kelvin":
-        //             operation.Result =
-        //     }
-        //     //return View();
-        // }
+         switch(operation.Operator)
+            {
+                case "Kelvin To Celsius":
+                    operation.Result = operation.InputValue - 273.15; 
+                    break;
+                case "Kelvin To Fahrenheit":
+                    operation.Result = ((operation.InputValue * (9/5)) - 459.67);
+                    break;
+                case "Celsius to Kelvin":
+                    operation.Result = operation.InputValue + 273.15; 
+                    break;
+                case "Fahrenheit to Kelvin": 
+                    operation.Result = ((operation.InputValue + 459.67) * (0.55555556)); 
+                    break;
+                case "Celsius to Fahrenheit":
+                    operation.Result = (operation.InputValue * (9/5)) + 32;
+                    break;
+                case "Fahrenheit to Celsius":
+                    operation.Result = (operation.InputValue - 32) * (5/9); 
+                    break;
+                case "default":
+                    Console.WriteLine("Please enter again");
+                    break;
+
+            }
+            return View(operation);
+            }
 
     }
 }
